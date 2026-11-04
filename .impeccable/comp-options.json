@@ -1,0 +1,43 @@
+{
+  "title": "Choose the landing-page composition",
+  "question": "The Dispatch Wall identity is fixed. Which composition should become the actual responsive page?",
+  "options": [
+    {
+      "id": "balanced",
+      "label": "Balanced Dispatch",
+      "kicker": "ORIGINAL",
+      "lineage": "service ticket and route map in equal balance",
+      "thesis": "The request form and the local dispatch process share the first viewport.",
+      "palette": ["#F4EEDC", "#183153", "#D84A35", "#2D7A63"],
+      "materials": ["enamel board", "paper service ticket", "magnetic route map"],
+      "viewport": "A large request ticket anchors the left while a local route map and confirmation state fill the right.",
+      "risk": "Two equally strong focal areas can compete on smaller screens.",
+      "comp": ".impeccable/mocks/decision/model-pick.png"
+    },
+    {
+      "id": "route",
+      "label": "Route First",
+      "kicker": "PROCESS-LED",
+      "lineage": "regional route map as the visual thesis",
+      "thesis": "The visitor sees a service request move across the company’s local operating area.",
+      "palette": ["#F4EEDC", "#183153", "#D84A35", "#2D7A63"],
+      "materials": ["enamel board", "folded street map", "magnetic route markers"],
+      "viewport": "The map owns the center while a compact ticket starts the route and a status rail closes it.",
+      "risk": "The compact request form may feel secondary to the narrative.",
+      "comp": ".impeccable/mocks/dispatch-route-focus.png"
+    },
+    {
+      "id": "ticket",
+      "label": "Ticket First",
+      "kicker": "CONVERSION-LED",
+      "lineage": "oversized service ticket as the primary action surface",
+      "thesis": "The visitor can request service immediately and still understands every next step.",
+      "palette": ["#F4EEDC", "#183153", "#D84A35", "#2D7A63"],
+      "materials": ["paper service ticket", "enamel header", "vertical dispatch lane"],
+      "viewport": "A large service ticket fills the left; a narrow route lane explains confirmation and technician progress on the right.",
+      "risk": "The form can dominate unless later sections give the brand enough breathing room.",
+      "comp": ".impeccable/mocks/dispatch-ticket-focus.png"
+    }
+  ],
+  "steer": false
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-04T01:32:12.5558326-03:00",
+  "title": "Design System: Everwell Dispatch Wall",
+  "extensions": {
+    "colorMeta": {
+      "enamel-cream": { "role": "neutral", "displayName": "Enamel Cream", "canonical": "#f4eedc", "tonalRamp": ["oklch(20% 0.025 88)", "oklch(31% 0.025 88)", "oklch(43% 0.025 88)", "oklch(55% 0.025 88)", "oklch(67% 0.025 88)", "oklch(78% 0.025 88)", "#f4eedc", "oklch(97% 0.025 88)"] },
+      "enamel-deep": { "role": "neutral", "displayName": "Deep Enamel", "canonical": "#e7d3b3", "tonalRamp": ["oklch(20% 0.04 76)", "oklch(31% 0.04 76)", "oklch(43% 0.04 76)", "oklch(55% 0.04 76)", "oklch(67% 0.04 76)", "oklch(78% 0.04 76)", "#e7d3b3", "oklch(95% 0.04 76)"] },
+      "ticket-paper": { "role": "neutral", "displayName": "Ticket Paper", "canonical": "#f7e7cc", "tonalRamp": ["oklch(20% 0.04 76)", "oklch(31% 0.04 76)", "oklch(43% 0.04 76)", "oklch(55% 0.04 76)", "oklch(67% 0.04 76)", "oklch(78% 0.04 76)", "#f7e7cc", "oklch(96% 0.04 76)"] },
+      "ticket-paper-dark": { "role": "neutral", "displayName": "Ticket Edge", "canonical": "#d7b889", "tonalRamp": ["oklch(20% 0.07 72)", "oklch(31% 0.07 72)", "oklch(43% 0.07 72)", "oklch(55% 0.07 72)", "oklch(67% 0.07 72)", "#d7b889", "oklch(88% 0.07 72)", "oklch(95% 0.07 72)"] },
+      "rail-navy": { "role": "primary", "displayName": "Rail Navy", "canonical": "#183153", "tonalRamp": ["oklch(15% 0.07 255)", "#183153", "oklch(37% 0.07 255)", "oklch(49% 0.07 255)", "oklch(61% 0.07 255)", "oklch(73% 0.07 255)", "oklch(84% 0.07 255)", "oklch(95% 0.07 255)"] },
+      "night-navy": { "role": "primary", "displayName": "Night Navy", "canonical": "#0e223b", "tonalRamp": ["#0e223b", "oklch(27% 0.06 255)", "oklch(39% 0.06 255)", "oklch(51% 0.06 255)", "oklch(63% 0.06 255)", "oklch(75% 0.06 255)", "oklch(86% 0.06 255)", "oklch(95% 0.06 255)"] },
+      "service-red": { "role": "primary", "displayName": "Service Red", "canonical": "#c83d28", "tonalRamp": ["oklch(15% 0.16 32)", "oklch(27% 0.16 32)", "oklch(39% 0.16 32)", "#c83d28", "oklch(62% 0.16 32)", "oklch(74% 0.16 32)", "oklch(86% 0.16 32)", "oklch(95% 0.16 32)"] },
+      "service-red-dark": { "role": "primary", "displayName": "Pressed Service Red", "canonical": "#9e2d1f", "tonalRamp": ["oklch(15% 0.14 32)", "oklch(27% 0.14 32)", "#9e2d1f", "oklch(50% 0.14 32)", "oklch(62% 0.14 32)", "oklch(74% 0.14 32)", "oklch(86% 0.14 32)", "oklch(95% 0.14 32)"] },
+      "route-green": { "role": "secondary", "displayName": "Route Green", "canonical": "#2d7a63", "tonalRamp": ["oklch(15% 0.09 165)", "oklch(27% 0.09 165)", "#2d7a63", "oklch(50% 0.09 165)", "oklch(62% 0.09 165)", "oklch(74% 0.09 165)", "oklch(86% 0.09 165)", "oklch(95% 0.09 165)"] },
+      "route-green-bright": { "role": "secondary", "displayName": "Active Route Green", "canonical": "#21a24f", "tonalRamp": ["oklch(15% 0.16 145)", "oklch(27% 0.16 145)", "oklch(39% 0.16 145)", "#21a24f", "oklch(62% 0.16 145)", "oklch(74% 0.16 145)", "oklch(86% 0.16 145)", "oklch(95% 0.16 145)"] },
+      "charcoal": { "role": "neutral", "displayName": "Charcoal", "canonical": "#252a2e", "tonalRamp": ["#252a2e", "oklch(27% 0.01 240)", "oklch(39% 0.01 240)", "oklch(51% 0.01 240)", "oklch(63% 0.01 240)", "oklch(75% 0.01 240)", "oklch(86% 0.01 240)", "oklch(95% 0.01 240)"] },
+      "ink-soft": { "role": "neutral", "displayName": "Soft Ink", "canonical": "#4d4d48", "tonalRamp": ["oklch(15% 0.01 100)", "#4d4d48", "oklch(39% 0.01 100)", "oklch(51% 0.01 100)", "oklch(63% 0.01 100)", "oklch(75% 0.01 100)", "oklch(86% 0.01 100)", "oklch(95% 0.01 100)"] },
+      "warm-white": { "role": "neutral", "displayName": "Warm White", "canonical": "#fffdf7", "tonalRamp": ["oklch(20% 0.01 88)", "oklch(31% 0.01 88)", "oklch(43% 0.01 88)", "oklch(55% 0.01 88)", "oklch(67% 0.01 88)", "oklch(79% 0.01 88)", "oklch(90% 0.01 88)", "#fffdf7"] },
+      "navy-line": { "role": "neutral", "displayName": "Navy Rule", "canonical": "rgba(24, 49, 83, 0.26)", "tonalRamp": ["rgba(24,49,83,0.95)", "rgba(24,49,83,0.82)", "rgba(24,49,83,0.68)", "rgba(24,49,83,0.54)", "rgba(24,49,83,0.40)", "rgba(24,49,83,0.26)", "rgba(24,49,83,0.14)", "rgba(24,49,83,0.06)"] },
+      "focus-amber": { "role": "tertiary", "displayName": "Focus Amber", "canonical": "#f39a2e", "tonalRamp": ["oklch(15% 0.16 70)", "oklch(27% 0.16 70)", "oklch(39% 0.16 70)", "oklch(51% 0.16 70)", "#f39a2e", "oklch(74% 0.16 70)", "oklch(86% 0.16 70)", "oklch(95% 0.16 70)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Dispatch Display", "purpose": "The largest page statement only." },
+      "headline": { "displayName": "Section Headline", "purpose": "Major section statements." },
+      "title": { "displayName": "Ledger Title", "purpose": "Services, process steps, and status blocks." },
+      "body": { "displayName": "Operating Copy", "purpose": "Reading copy, navigation, and controls." },
+      "label": { "displayName": "Operating Label", "purpose": "Short uppercase codes and section markers." },
+      "script": { "displayName": "Trade Signature", "purpose": "Replaceable business signature only." }
+    },
+    "shadows": [
+      { "name": "ambient-low", "value": "0 10px 24px rgba(51, 37, 24, 0.15)", "purpose": "Dropdown navigation, compact paper rails, and modest lifted surfaces." },
+      { "name": "board-lift", "value": "0 20px 54px rgba(38, 26, 16, 0.22)", "purpose": "Major framed boards and detached paper tickets." },
+      { "name": "action-lift", "value": "0 7px 16px rgba(158, 45, 31, 0.25)", "purpose": "Resting red conversion controls." },
+      { "name": "action-lift-hover", "value": "0 10px 18px rgba(158, 45, 31, 0.3)", "purpose": "Raised red conversion controls on hover." }
+    ],
+    "motion": [
+      { "name": "state-fast", "value": "150ms ease-out", "purpose": "Action background, lift, and shadow feedback." },
+      { "name": "state-standard", "value": "180ms ease-out", "purpose": "Navigation underlines, ledger shifts, and menu reveal details." },
+      { "name": "route-draw", "value": "1.6s cubic-bezier(.17,.84,.35,1)", "purpose": "One-time route progress drawing when the dispatch field enters view." },
+      { "name": "marker-arrive", "value": "720ms cubic-bezier(.16,1,.3,1)", "purpose": "Bounded arrival of route markers after route progress." },
+      { "name": "reduced-motion", "value": ".01ms", "purpose": "Collapses animation and transition duration when reduced motion is requested." }
+    ],
+    "breakpoints": [
+      { "name": "wide-adjustment", "value": "1180px" },
+      { "name": "tablet-collapse", "value": "900px" },
+      { "name": "mobile-urgency", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Service Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The decisive red action used for service requests.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">REQUEST SERVICE <span aria-hidden=\"true\">→</span></button>",
+      "css": ".ds-btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:48px; padding:9px 16px; border:0; border-radius:5px; color:var(--white); background:var(--red); font:800 18px/1.2 var(--font-body); box-shadow:0 8px 16px rgba(158,45,31,.2); cursor:pointer; transition:background 160ms ease-out,transform 160ms ease-out,box-shadow 160ms ease-out; } .ds-btn-primary:hover { background:var(--red-dark); transform:translateY(-2px); box-shadow:0 11px 18px rgba(158,45,31,.25); } .ds-btn-primary:active { transform:translateY(1px); } .ds-btn-primary:focus-visible { outline:3px solid #f39a2e; outline-offset:4px; }"
+    },
+    {
+      "name": "Outline Service Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "A quieter action that stays native to cream or paper fields.",
+      "html": "<button class=\"ds-btn-outline\" type=\"button\">VIEW SERVICE AREA</button>",
+      "css": ".ds-btn-outline { display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:11px 20px; border:2px solid var(--navy); border-radius:4px; color:var(--navy); background:transparent; font:800 18px/1.2 var(--font-body); cursor:pointer; transition:background 160ms ease-out,color 160ms ease-out; } .ds-btn-outline:hover { color:var(--cream); background:var(--navy); } .ds-btn-outline:focus-visible { outline:3px solid #f39a2e; outline-offset:4px; }"
+    },
+    {
+      "name": "Ticket Field",
+      "kind": "input",
+      "refersTo": "field-default",
+      "description": "A compact labeled field designed to live inside a paper service record.",
+      "html": "<label class=\"ds-field\"><span>PHONE</span><input type=\"tel\" placeholder=\"(512) 555-0148\"></label>",
+      "css": ".ds-field { display:grid; gap:3px; color:var(--navy-deep); font-family:var(--font-body); } .ds-field span { font-size:.68rem; font-weight:800; letter-spacing:.12em; text-transform:uppercase; } .ds-field input { width:100%; min-height:36px; padding:6px 9px; color:var(--navy-deep); background:rgba(255,253,247,.42); border:1.5px solid rgba(24,49,83,.7); border-radius:3px; font:18px/1.55 var(--font-body); caret-color:var(--red); } .ds-field input:hover { border-color:var(--navy); background:rgba(255,253,247,.65); } .ds-field input:focus-visible { outline:3px solid #f39a2e; outline-offset:4px; }"
+    },
+    {
+      "name": "Navigation Link",
+      "kind": "nav",
+      "description": "A compact operating link with a drawn red underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Preview navigation\"><a href=\"#\">SERVICES</a><a href=\"#\">SERVICE AREAS</a><a href=\"#\">ABOUT</a></nav>",
+      "css": ".ds-nav { display:flex; gap:28px; color:var(--navy-deep); font-family:var(--font-body); } .ds-nav a { position:relative; color:inherit; font-size:.93rem; font-weight:700; text-decoration:none; white-space:nowrap; } .ds-nav a::after { content:\"\"; position:absolute; left:0; right:100%; bottom:-7px; height:3px; background:var(--red); transition:right 180ms ease-out; } .ds-nav a:hover::after,.ds-nav a:focus-visible::after { right:0; } .ds-nav a:focus-visible { outline:3px solid #f39a2e; outline-offset:4px; }"
+    },
+    {
+      "name": "Confirmed Status",
+      "kind": "custom",
+      "refersTo": "status-confirmed",
+      "description": "A semantic route-state block used when a service step is confirmed.",
+      "html": "<div class=\"ds-status-confirmed\"><svg aria-hidden=\"true\" viewBox=\"0 0 24 24\"><path d=\"m5 12 4 4L19 6\"/></svg><span>Visit confirmed</span></div>",
+      "css": ".ds-status-confirmed { display:flex; align-items:center; justify-content:center; gap:11px; min-height:44px; padding:6px 15px; color:var(--green); background:transparent; border:2px solid currentColor; border-radius:5px; font:400 1.25rem/1 var(--font-display); text-align:center; } .ds-status-confirmed svg { width:25px; fill:none; stroke:currentColor; stroke-width:2.5; } .ds-status-confirmed:focus-within { outline:3px solid #f39a2e; outline-offset:4px; }"
+    },
+    {
+      "name": "Service Ledger Row",
+      "kind": "card",
+      "description": "A ruled service record that avoids generic card-grid treatment.",
+      "html": "<article class=\"ds-ledger-row\"><span class=\"ds-ledger-code\">SERVICE 01</span><div><h3>Cooling repair</h3><p>Clear operating detail belongs beneath a sturdy serif title.</p></div><a href=\"#\">REQUEST SERVICE</a></article>",
+      "css": ".ds-ledger-row { display:grid; grid-template-columns:100px minmax(260px,1fr) auto; gap:30px; align-items:center; padding:30px 8px; color:var(--navy-deep); background:transparent; border-top:2px solid var(--navy); border-bottom:1px solid rgba(24,49,83,.34); font-family:var(--font-body); transition:transform 180ms ease-out,background 180ms ease-out; } .ds-ledger-row:hover { transform:translateX(10px); background:rgba(255,253,247,.38); } .ds-ledger-code { color:var(--red); font-size:.68rem; font-weight:800; letter-spacing:.18em; } .ds-ledger-row h3 { margin:0 0 4px; font:400 2rem/1 var(--font-display); } .ds-ledger-row p { margin:0; color:var(--ink-soft); } .ds-ledger-row a { color:inherit; font-size:.86rem; font-weight:800; text-underline-offset:.18em; } .ds-ledger-row a:focus-visible { outline:3px solid #f39a2e; outline-offset:4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Dispatch Wall",
+    "overview": "The system translates a capable local service operation into a physical working surface: warm enamel grounds, paper records, dark metal rails, magnetic markers, and clear route states. It should feel handled, practical, and reassuring rather than polished into generic software chrome. The physical cues carry personality while the information remains commercially direct.\n\nDensity is purposeful. Large editorial headlines establish confidence; compact uppercase labels and ruled lists organize operational detail; red actions and green progress states make the next move legible at a glance. Texture, overlaps, and restrained wear create tactility, but semantic hierarchy and accessible interaction always remain dominant.",
+    "keyCharacteristics": [
+      "Warm, lightly worn enamel and paper surfaces framed by dark navy structure.",
+      "Editorial serif headlines paired with compact, high-weight sans-serif operating labels.",
+      "Red reserved for action and emphasis; green reserved for route progress and confirmation.",
+      "Physical depth created through downward shadows, overlaps, rails, rules, and clipped ticket edges.",
+      "Responsive composition that becomes a clear single-column flow without losing the dispatch-board identity."
+    ],
+    "rules": [
+      { "name": "The Operational Accent Rule", "body": "Red means action or urgency; green means movement, readiness, or confirmation. Do not exchange their roles for decoration.", "section": "colors" },
+      { "name": "The Warm Ground Rule", "body": "Large light surfaces stay in the enamel-and-paper family. Pure white is a control highlight, not the page canvas.", "section": "colors" },
+      { "name": "The Two-Voice Rule", "body": "Bree Serif speaks in statements; Barlow handles instructions, evidence, navigation, and action. Never use the script face for general headings or body copy.", "section": "typography" },
+      { "name": "The Compact Label Rule", "body": "Uppercase labels remain short and functional. Their tracking supplies separation; their size should not compete with titles.", "section": "typography" },
+      { "name": "The Framed Field Rule", "body": "A large composition should read as one bounded working field before its internal pieces are read as separate cards.", "section": "layout" },
+      { "name": "The Mobile Action Rule", "body": "On narrow screens, preserve both direct calling and requesting service; neither path may be hidden behind navigation.", "section": "layout" },
+      { "name": "The Downward Weight Rule", "body": "Shadows fall below physical objects with warm, diffuse edges. Avoid cool glows, floating glass, or equal halos.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do build large sections as framed fields, rails, ledgers, tickets, and route structures rather than generic card grids.",
+      "Do keep red actions and green progress states semantically consistent across every screen.",
+      "Do use warm texture as material evidence while retaining solid-color fallbacks and readable contrast.",
+      "Do preserve visible focus, reduced-motion behavior, and the paired call/request actions at mobile sizes.",
+      "Do use physical overlap and ruled separation to organize dense service information."
+    ],
+    "donts": [
+      "Don't introduce glassmorphism, cool neon glows, or weightless floating panels.",
+      "Don't use pure white as the dominant page background or scatter accent colors decoratively.",
+      "Don't turn repeated content into a field of interchangeable rounded cards.",
+      "Don't use the script face outside the replaceable business signature.",
+      "Don't add invented badges, ratings, certifications, or proof motifs to make the system feel trustworthy."
+    ]
+  }
+}
