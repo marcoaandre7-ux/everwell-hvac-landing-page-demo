@@ -20,6 +20,28 @@ document.querySelectorAll("[data-service-area]").forEach((element) => {
   element.textContent = config.serviceArea || "Austin and nearby communities";
 });
 
+document.querySelectorAll("[data-hero-title]").forEach((element) => {
+  element.textContent = config.heroTitle || "Heating & air conditioning service in Austin.";
+});
+
+document.querySelectorAll("[data-hero-support]").forEach((element) => {
+  element.textContent = config.heroSupport || "Repair, maintenance, and installation for your home. Call our local team or request a visit.";
+});
+
+document.querySelectorAll("[data-service-cities]").forEach((list) => {
+  const cities = Array.isArray(config.serviceCities) && config.serviceCities.length
+    ? config.serviceCities
+    : ["Austin", "Cedar Park", "Round Rock", "Pflugerville"];
+
+  const fragment = document.createDocumentFragment();
+  cities.forEach((city) => {
+    const item = document.createElement("li");
+    item.textContent = city;
+    fragment.append(item);
+  });
+  list.replaceChildren(fragment);
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();
 
 const menuButton = document.querySelector(".menu-toggle");
@@ -60,27 +82,39 @@ form.addEventListener("submit", (event) => {
   let firstInvalid = null;
 
   requiredFields.forEach((field) => {
-    const invalid = !field.value.trim();
+    const phoneIsIncomplete = field.name === "phone" && field.value.replace(/\D/g, "").length < 7;
+    const invalid = !field.checkValidity() || phoneIsIncomplete;
     field.setAttribute("aria-invalid", String(invalid));
+    const error = form.querySelector(`[data-error-for="${field.name}"]`);
+    if (error) {
+      if (!invalid) {
+        error.textContent = "";
+      } else if (field.name === "phone" && field.value.trim()) {
+        error.textContent = "Enter a phone number with at least 7 digits.";
+      } else {
+        error.textContent = `Enter your ${field.name === "service" ? "service need" : field.name}.`;
+      }
+    }
     if (invalid && !firstInvalid) firstInvalid = field;
   });
 
   if (firstInvalid) {
-    formMessage.textContent = "Please complete the highlighted fields so the team can follow up.";
+    formMessage.textContent = "Please review the highlighted fields.";
     firstInvalid.focus();
     return;
   }
 
-  submitButton.disabled = true;
-  submitButton.querySelector("span").textContent = "Preparing request…";
-  formMessage.textContent = "";
+  submitButton.disabled = false;
+  formMessage.className = "form-message demo-result";
+  formMessage.textContent = "Demo only — your information was not sent or stored.";
+});
 
-  window.setTimeout(() => {
-    submitButton.disabled = false;
-    submitButton.querySelector("span").textContent = "Request service";
-    formMessage.className = "form-message success";
-    formMessage.textContent = "Demo complete. Connect this form to the client’s CRM before launch.";
-    form.reset();
-    requiredFields.forEach((field) => field.removeAttribute("aria-invalid"));
-  }, 700);
+form.addEventListener("input", (event) => {
+  const field = event.target.closest("input, select");
+  if (!field) return;
+  field.removeAttribute("aria-invalid");
+  const error = form.querySelector(`[data-error-for="${field.name}"]`);
+  if (error) error.textContent = "";
+  formMessage.textContent = "";
+  formMessage.className = "form-message";
 });
